@@ -1,0 +1,23 @@
+{
+  // UI 库 不污染全局
+  // "plugins": [["@babel/plugin-transform-runtime",{
+  //     "corejs": 2,
+  //     "helpers": true,
+  //     "regenerator": true,
+  //     "useESModules": false
+  //   }]]
+  // ES 6 babel 转换 ES 5
+  // 其他使用
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "chrome": "67"
+        },
+        "corejs": 2,
+        "useBuiltIns": "usage"
+      }
+    ]
+  ]
+}
